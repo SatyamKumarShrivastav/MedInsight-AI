@@ -6,7 +6,9 @@
 **Tagline:** *From Biomedical Data to Intelligent Insight.*
 
 **Engineering & Research Organization:** BioIntelliX  
-**Academic Institution:** Excel Engineering College, Anna University, Chennai  
+**Academic Institution:** 
+**College:** Excel Engineering College
+**University** Anna University, Chennai  
 **Project Type:** 7th-Semester Design Project  
 **Project Period:** July 2026 – November 2026  
 **Project Leadership:** Developed by **BioIntelliX (Team led by Mr. S. K. Shrivastav)**
