@@ -1,2 +1,8 @@
-# MedInsight-AI
-MedInsight AI is an academic and research-oriented software platform. It provides data-driven analytical and model-generated insights using biomedical datasets. It is not a medical diagnostic system, does not replace qualified healthcare professionals, and should not be used to make medical decisions.
+# pytest cache directory #
+
+This directory contains data from the pytest's cache plugin,
+which provides the `--lf` and `--ff` options, as well as the `cache` fixture.
+
+**Do not** commit this to version control.
+
+See [the docs](https://docs.pytest.org/en/stable/how-to/cache.html) for more information.
