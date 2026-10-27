@@ -250,14 +250,4 @@ MedInsight AI/
 * **Platform:** **MedInsight AI** — *From Biomedical Data to Intelligent Insight.*
 
 ## BioIntelliX — DEVELOPMENT & RESEARCH TEAM
-
-**Satyam Kumar Shrivastav — 730923201101 (B.Tech – AI&DS)**
-
-**Prasanna Vengatesh — 730923201087 (B.Tech – AI&DS)**
-
-**Elakiya N — 730923121012 (B.E – BME)**
-
-**Deepa V — 730923121006 (B.E – BME)**
-
-<img width="704" height="258" alt="image" src="https://github.com/user-attachments/assets/282d1112-849e-42f7-922b-ef063f9f9cdb" />
-
+<img width="1920" height="1031" alt="2026-10-28 (1)" src="https://github.com/user-attachments/assets/3ee5baa2-b150-49d2-a5b1-33dc2ddc6ace" />
