@@ -70,6 +70,10 @@ MedInsight AI is organized into a **4-tier layered architecture**:
 │  - Role Governance: CEO, ADMIN, RESEARCHER, STUDENT + Audit Trail      │
 └────────────────────────────────────────────────────────────────────────┘
 ```
+<img width="1536" height="1024" alt="MedInsight AI System Architecture (1)" src="https://github.com/user-attachments/assets/31f5b08e-4bea-4ebc-9a5b-cf5885812bbf" />
+<img width="1958" height="1576" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/90494525-64ac-4966-9525-f88ba3b31222" />
+<img width="1536" height="1024" alt="MedInsight AI System Architecture" src="https://github.com/user-attachments/assets/65d85c79-9a93-41d9-b18e-23fc8175e863" />
+<img width="1312" height="1199" alt="BioIntelliX System Architecture" src="https://github.com/user-attachments/assets/d935a40e-e8c3-4dac-86e1-d8d330741ae9" />
 
 ---
 
@@ -254,5 +258,6 @@ MedInsight AI/
 **Elakiya N — 730923121012 (B.E – BME)**
 
 **Deepa V — 730923121006 (B.E – BME)**
+
 <img width="704" height="258" alt="image" src="https://github.com/user-attachments/assets/282d1112-849e-42f7-922b-ef063f9f9cdb" />
 
