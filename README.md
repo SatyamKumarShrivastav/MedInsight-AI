@@ -244,10 +244,15 @@ MedInsight AI/
 * **Engineering & Research Organization:** **BioIntelliX**  
 * **Project Leadership:** Developed by **BioIntelliX** (Team led by **Mr. S. K. Shrivastav**)  
 * **Platform:** **MedInsight AI** — *From Biomedical Data to Intelligent Insight.*
+
 ## BioIntelliX — DEVELOPMENT & RESEARCH TEAM
+
 **Satyam Kumar Shrivastav — 730923201101 (B.Tech – AI&DS)**
+
 **Prasanna Vengatesh — 730923201087 (B.Tech – AI&DS)**
+
 **Elakiya N — 730923121012 (B.E – BME)**
+
 **Deepa V — 730923121006 (B.E – BME)**
 <img width="704" height="258" alt="image" src="https://github.com/user-attachments/assets/282d1112-849e-42f7-922b-ef063f9f9cdb" />
 
