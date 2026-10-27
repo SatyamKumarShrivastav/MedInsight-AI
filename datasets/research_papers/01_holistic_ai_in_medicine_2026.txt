@@ -1,0 +1,25 @@
+Title: Holistic AI in Medicine: Improved Performance and Explainability
+Authors: Petridis, P., et al.
+Journal: npj Digital Medicine (Nature Publishing Group)
+Year: 2026
+DOI: 10.1038/s41746-025-02298-3
+Category: Multimodal Biomedical AI, Explainability, Clinical Decision Support
+
+ABSTRACT:
+Contemporary clinical decision-making increasingly relies on heterogeneous multimodal data streams, including electronic health records (EHRs), diagnostic imaging, genomic markers, and physiological waveforms. While monolithic deep learning models achieve superior predictive accuracy, their clinical translation is frequently hindered by lack of interpretability and opaque reasoning. In this work, we introduce the explainable Holistic Artificial Intelligence in Medicine (xHAIM) framework. xHAIM unifies structured tabular analytics, time-series biosignal representations, and generative knowledge retrieval within a modular architecture that delivers both high predictive performance and faithful, concept-level explanations.
+
+METHODOLOGY & ARCHITECTURE:
+The xHAIM architecture is structured into four primary computational tiers:
+1. Multimodal Data Ingestion & Quality Profiling: Automated schema validation, missingness categorization, and outlier characterization across tabular clinical measurements and continuous waveforms.
+2. Representation Learning & Feature Engineering: Self-supervised pretraining on multimodal tokens combined with domain-specific biomedical feature extraction (e.g., HRV parameters and metabolic ratios).
+3. Predictive Modeling Core: Ensemble gradient-boosted decision trees and multi-head attention mechanisms optimized for cross-entropy and Brier score calibration.
+4. Multimodal Explainability Engine: Integrated gradient-weighted class activation mapping (Grad-CAM) for visual signals and Shapley additive explanations (SHAP) for tabular features, coupled with a natural language generation module that synthesizes clinician-readable rationales.
+
+EXPERIMENTAL RESULTS:
+Across validation cohorts totaling over 85,000 patient encounters from MIMIC-IV and institutional registries, xHAIM achieved an area under the receiver operating characteristic curve (ROC-AUC) of 0.892 (95% CI: 0.884-0.900) for 30-day readmission prediction, outperforming conventional single-modality baselines (AUC 0.814). More importantly, in reader studies involving board-certified clinicians, the inclusion of local SHAP attributions and clinical concept decompositions reduced diagnostic decision latency by 28% and increased clinician trust scores from 3.2 to 4.6 on a 5-point Likert scale.
+
+CONNECTION TO MEDINSIGHT AI:
+MedInsight AI directly adopts the architectural philosophy of xHAIM: transitioning from black-box automated predictors to a transparent, explainable decision-support workbench. The pipeline follows: Biomedical Data Ingestion -> Quality Verification -> Analytical Feature Engineering -> ML Training -> SHAP Attribution -> Evidence-Grounded Research Guidance.
+
+LIMITATIONS & CLINICAL DISCLAIMER:
+Although xHAIM demonstrates robust statistical performance across diverse cohorts, model-generated explanations reflect correlational associations learned from retrospective training distributions and do not establish direct biological causation. The framework is designated for academic decision-support and research exploration, not autonomous clinical diagnostic decisions.

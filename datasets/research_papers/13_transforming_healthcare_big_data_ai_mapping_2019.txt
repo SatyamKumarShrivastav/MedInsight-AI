@@ -1,0 +1,19 @@
+Title: Transforming healthcare with big data analytics and artificial intelligence: A systematic mapping study
+Authors: Mehta, N., Pandit, A., and Shukla, S.
+Journal: Journal of Biomedical Informatics (Elsevier)
+Year: 2019
+Volume: 100, Article: 103311
+PMID: 31629922
+DOI: 10.1016/j.jbi.2019.103311
+Category: Big Data Analytics, Systematic Mapping, Multimodal Healthcare AI
+
+ABSTRACT:
+The healthcare industry generates astronomical volumes of multi-structured data from clinical encounters, laboratory diagnostics, wearable physiological monitors, and academic repositories. This systematic mapping study categorizes and reviews 2,421 peer-reviewed research publications (2013-2019) to examine how Big Data Analytics (BDA) and Artificial Intelligence (AI) transform clinical operations and evidence-based decision-making.
+
+KEY FINDINGS & MAPPING TAXONOMY:
+1. Multidimensional Impact: BDA and AI drive radical improvements across disease prognosis, clinical workflow optimization, personalized treatment planning, and epidemiological outbreak detection.
+2. Fragmented Architecture Trap: The majority of existing works are siloed into narrow single-purpose tasks (e.g., pure image segmentation or isolated EHR statistical tests), failing to link data hygiene, signal processing, predictive modeling, and user-facing interpretation into cohesive platforms.
+3. Systemic Bottlenecks: Data quality inconsistency, missingness, lack of explainability, and the cognitive friction of complex AI outputs are repeatedly highlighted as primary impediments preventing bench-to-bedside translation.
+
+ROLE IN MEDINSIGHT AI:
+Mehta et al.'s systematic mapping provides the architectural justification for MedInsight AI's holistic, unified vision. Rather than producing another isolated machine learning script, MedInsight AI bridges data ingestion, automated quality profiling, physiological signal filtering, ML classification, and human-in-the-loop research RAG within a single cohesive, accessible academic ecosystem.

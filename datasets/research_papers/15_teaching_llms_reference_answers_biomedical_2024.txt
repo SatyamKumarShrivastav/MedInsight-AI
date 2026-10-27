@@ -1,0 +1,21 @@
+Title: How do you know that? Teaching Generative Language Models to Reference Answers to Biomedical Questions
+Authors: Bašaragin, B., Ljajić, A., Medvecki, D., Cassano, L., Košprdić, M., and Milošević, N.
+Conference: 23rd Workshop on Biomedical Natural Language Processing (BioNLP 2024) @ ACL 2024
+Year: 2024
+Pages: 569-580
+ACL Anthology: 2024.bionlp-1.44
+Category: Biomedical NLP, Retrieval-Augmented Generation, Citation-Grounded QA
+
+ABSTRACT:
+Large language models (LLMs) demonstrate impressive conversational capabilities but are critically vulnerable to hallucinations and fabricated references—a hazardous failure mode in medicine. This study presents a specialized Retrieval-Augmented Generation (RAG) framework fine-tuned to synthesize biomedical answers that strictly reference and cite supporting scientific evidence retrieved from PubMed.
+
+KEY METHODOLOGICAL CONTRIBUTIONS:
+1. Contextual Evidence Injection: Dynamic retrieval of authoritative PubMed abstracts and clinical literature, injected directly into the model's instruction context.
+2. Fine-Grained Sentence-Level Referencing: Rather than appending vague bibliographies at the end of generated text, the model is trained to interleave explicit, verifiable sentence-level citation markers linking each factual claim back to its specific retrieved chunk.
+3. Mitigation of Factual Hallucination: Systematic evaluation on biomedical QA benchmarks demonstrates that citation-grounded RAG drastically curtails confabulated clinical assertions while providing clinicians with an immediate audit path to original peer-reviewed abstracts.
+
+ROLE IN MEDINSIGHT AI:
+This paper provides the foundational principle for MedInsight AI's Biomedical Research Assistant:
+- Elimination of ungrounded black-box LLM generation.
+- All research assistant answers must be anchored in chunked, indexed biomedical literature.
+- Outputs feature explicit inline citations and document provenance, allowing students and researchers to inspect the exact source sentences justifying each synthesis.

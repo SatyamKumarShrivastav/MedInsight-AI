@@ -1,0 +1,52 @@
+# MedInsight AI — Backend Requirements
+# BioIntelliX | Team led by Mr. S. K. Shrivastav
+# Pin versions for reproducibility
+
+# Web framework
+fastapi==0.111.0
+uvicorn==0.29.0
+python-multipart==0.0.9
+aiofiles==23.2.1
+
+# Database
+SQLAlchemy==2.0.36
+PyMySQL==1.1.1
+alembic==1.20.1
+
+# Authentication
+python-jose[cryptography]==3.5.0
+passlib==1.7.4
+bcrypt==4.2.0
+cryptography==43.0.1
+
+# Validation
+pydantic==2.13.3
+pydantic-settings==2.9.1
+
+# Data science
+numpy==2.1.3
+pandas==2.2.3
+scipy==1.14.1
+scikit-learn==1.6.1
+xgboost==3.4.1
+lightgbm==4.7.0
+joblib>=1.4.2
+
+# Explainability
+shap==0.54.1
+
+# Reports
+reportlab==5.0.1
+openpyxl==3.1.5
+
+# Document processing
+pdfplumber==0.11.10
+
+# Utilities
+python-dotenv>=1.0.0
+Pillow==13.0.0
+
+# Testing
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
+httpx>=0.27.0

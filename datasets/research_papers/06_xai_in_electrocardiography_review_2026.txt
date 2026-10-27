@@ -1,0 +1,27 @@
+Title: Explainable Artificial Intelligence in Electrocardiography: A Systematic Review
+Authors: Taleban, J., et al.
+Journal: Biomedical Signal Processing and Control
+Year: 2026
+DOI: 10.1016/j.bspc.2026.107892 (PubMed: 41953749)
+Category: Systematic Review, Electrocardiography, XAI Techniques, Clinical Translation
+
+ABSTRACT:
+Automated analysis of electrocardiograms (ECGs) using machine learning has experienced rapid expansion, yet the absence of transparent decision-making remains a critical barrier to clinical adoption. This systematic literature review provides a rigorous synthesis of explainable AI (XAI) methodologies applied to electrocardiographic data. Following PRISMA guidelines, we screened 380 scientific records published between 2018 and 2026, selecting 45 high-quality peer-reviewed studies for comprehensive qualitative and quantitative analysis.
+
+SYSTEMATIC TAXONOMY OF ECG XAI:
+The review categorizes existing approaches into four primary technological paradigms:
+1. Feature-Level Attribution (24% of studies): Shapley Additive exPlanations (SHAP) and permutation feature importance applied to extracted hand-crafted features (HRV, wavelet coefficients, spectral powers). High clinical acceptance due to direct alignment with established physiological metrics.
+2. Temporal & Saliency Heatmapping (48% of studies): Grad-CAM, Integrated Gradients, and Guided Backpropagation applied to 1D CNNs or 2D spectrogram representations. Often criticized for lack of temporal specificity and sensitivity to baseline noise.
+3. Attention-Based Architectures (18% of studies): Multi-head self-attention mechanisms in Transformer models (e.g., ECG-BERT) highlighting critical time steps.
+4. Concept Bottlenecks & Disentangled Encoders (10% of studies): Emerging techniques translating latent spaces into electrophysiologist-interpretable terms (e.g., PR prolongation, QRS notch).
+
+KEY RESEARCH GAPS IDENTIFIED:
+- Sequential Nature & Noise Susceptibility: ECG signals are non-stationary and prone to motion artifacts; attribution algorithms frequently emphasize noise spikes instead of genuine cardiac events if robust preprocessing is omitted.
+- Scarcity of Human Expert Validation: Only 18% of reviewed publications evaluated generated explanations against blinded annotations by certified cardiologists.
+- Lack of Open-Source Benchmarking Platforms: Most studies operate on private institutional cohorts or custom codebases with minimal reproducibility.
+
+IMPACT ON MEDINSIGHT AI PLATFORM:
+MedInsight AI addresses the specific research gaps identified by Taleban et al.:
+- Implements rigorous digital filtering and signal verification before computing feature attribution.
+- Employs SHAP on explicit biomedical and electrophysiological parameters.
+- Provides an open, reproducible web workbench with transparent dataset schemas and audit logs.

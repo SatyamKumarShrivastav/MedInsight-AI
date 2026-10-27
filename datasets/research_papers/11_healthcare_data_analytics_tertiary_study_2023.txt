@@ -1,0 +1,19 @@
+Title: Data Analytics in Healthcare: A Tertiary Study
+Authors: Taipalus, T., Isomöttönen, V., Erkkilä, H., and Äyrämö, S.
+Journal: SN Computer Science (Springer Nature)
+Year: 2023
+Volume: 4, Issue: 1, Article: 87
+PMID: 36532635
+DOI: 10.1007/s42979-022-01490-6
+Category: Healthcare Data Analytics, Systematic Review of Reviews, Machine Learning Taxonomy
+
+ABSTRACT:
+The rapid accumulation of heterogeneous health data offers immense opportunities for data-driven clinical decision support and public health optimization. This paper presents a tertiary study (a systematic review of systematic literature reviews) consolidating research on data analytics across the healthcare domain. Analyzing 45 secondary systematic studies that synthesize hundreds of primary investigations, this meta-study identifies the prevailing methodologies, clinical target areas, and systemic challenges in current healthcare data analytics.
+
+KEY FINDINGS:
+1. Dominance of Machine Learning & Data Mining: Machine learning and supervised/unsupervised data mining represent the most pervasive and rapidly growing analytical paradigms in healthcare.
+2. Clinical Application Focus: The predominant applications center around medical image analysis, early disease recognition, physiological monitoring, outbreak surveillance, and clinical decision support systems (CDSS) for chronic conditions like cardiovascular diseases, diabetes, sepsis, and neurodegenerative disorders.
+3. Methodological Observations: The literature demonstrates an increasing adherence to standardized reporting guidelines (e.g., PRISMA), yet highlights persistent fragmentation between data engineering, algorithm training, and end-user clinical deployment.
+
+ROLE IN MEDINSIGHT AI:
+This tertiary study provides the broad academic literature foundation justifying MedInsight AI's end-to-end scope. Rather than treating biomedical analytics as isolated ad-hoc scripts, MedInsight AI embodies the study's primary recommendation: constructing an integrated, accessible analytics workflow connecting data ingestion, quality profiling, machine learning classification, and explainable decision support.

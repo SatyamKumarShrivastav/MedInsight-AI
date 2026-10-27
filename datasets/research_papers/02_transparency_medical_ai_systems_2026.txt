@@ -1,0 +1,29 @@
+Title: Transparency of Medical Artificial Intelligence Systems
+Authors: Kim, S., Gadgil, S., & Lee, H.
+Journal: Nature Reviews Bioengineering
+Year: 2026
+DOI: 10.1038/s44222-025-00363-w
+Category: Explainable AI, Responsible Healthcare AI, Model Governance
+
+ABSTRACT:
+The proliferation of deep learning algorithms in healthcare has precipitated urgent regulatory and ethical demands for transparency across the complete artificial intelligence lifecycle. In this review, we delineate a comprehensive taxonomy of medical AI transparency, encompassing data provenance transparency, algorithmic interpretability, operational auditability, and communicative explainability. We critique the limitations of post-hoc attribution methods when deployed in clinical environments without rigorous verification and formulate concrete guidelines for developing trustworthy decision-support systems.
+
+TAXONOMY OF MEDICAL AI TRANSPARENCY:
+1. Lifecycle Transparency: Explicit documentation of dataset curation protocols, demographic representation, inclusion/exclusion criteria, and class imbalance mitigation strategies.
+2. Algorithmic Transparency: Characterization of inductive biases, objective functions, optimization criteria, and hyperparameter sensitivity.
+3. Post-Hoc Interpretability: Deployment of Shapley Additive exPlanations (SHAP), Local Interpretable Model-agnostic Explanations (LIME), and integrated gradients to communicate feature-level influence on individual risk scores.
+4. Concept-Based & Counterfactual Explanations: Translation of high-dimensional feature vectors into medically salient concepts (e.g., hypercholesterolemia, prolonged QTc intervals) and counterfactual queries ("What minimal physiological change would alter the risk category?").
+5. Auditability and Activity Logging: Immutable tracking of all data transformations, model training runs, inference timestamps, and operator interactions to ensure scientific reproducibility and forensic traceability.
+
+KEY RECOMMENDATIONS FOR SYSTEM DEVELOPERS:
+- Never conflate mathematical feature importance with biological or epidemiological causality.
+- Ensure all predicted probabilities are evaluated for calibration error (e.g., Expected Calibration Error < 0.05) before clinical presentation.
+- Implement strict role-based access control and comprehensive audit logging across all analytical workflows.
+- Provide explicit empty states, data quality warnings, and clinical disclaimers in user-facing interfaces.
+
+APPLICATION IN MEDINSIGHT AI:
+MedInsight AI incorporates the Nature Reviews Bioengineering transparency principles throughout its architecture:
+- Dedicated Data Quality Engine inspecting missingness and schema anomalies.
+- Transparent ML Workbench preserving hyperparameter records and cross-validation metrics.
+- Explainable AI Workspace visualizing both global feature rankings and local single-instance SHAP values.
+- Full audit and activity logs tracking dataset operations and user interactions.

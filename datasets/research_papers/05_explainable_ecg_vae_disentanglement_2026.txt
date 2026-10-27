@@ -1,0 +1,25 @@
+Title: Explainable ECG Analysis by Explicit Information Disentanglement With VAEs
+Authors: van der Valk, M., et al.
+Journal: IEEE Transactions on Biomedical Engineering (TBME)
+Year: 2026
+DOI: 10.1109/TBME.2026.41212713 (PubMed: 41212713)
+Category: Biomedical Signal Analysis, Variational Autoencoders, Latent Disentanglement
+
+ABSTRACT:
+While deep neural networks achieve superior performance on automated electrocardiogram (ECG) pathology detection, their clinical integration remains severely constrained by lack of mechanistically understandable feature representations. This paper proposes a novel semi-supervised variational autoencoder (VAE) framework with explicit information disentanglement, separating rhythm characteristics, morphological shape factors, and patient-specific noise into orthogonal latent subspaces.
+
+ARCHITECTURE & MATHEMATICAL FORMULATION:
+The model architecture employs a hierarchical encoder-decoder structure:
+- Morphological Subspace (Z_morph): Encodes beat-level geometric signatures (QRS amplitude, ST deviation, T-wave symmetry).
+- Rhythmical Subspace (Z_rhythm): Encodes global temporal dynamics (RR interval variability, beat regularity, heart rate trend).
+- Noise & Artifact Subspace (Z_noise): Isolates high-frequency electromyographic interference and low-frequency respiration-induced baseline wander.
+Disentanglement is enforced via total correlation penalties (beta-VAE objective) and weak supervision from automated fiducial point estimators.
+
+VALIDATION & FINDINGS:
+Evaluated on the PhysioNet PTB-XL and Chapman-Shaoxing ECG repositories:
+1. Reconstructive and Generative Fidelity: The disentangled VAE reconstructed normal and pathological heartbeats with a root mean square error (RMSE) below 0.045 mV.
+2. Latent Traversal Interpretability: By traversing individual latent dimensions along Z_morph, clinicians observed continuous, physiologically valid morphological transformations (e.g., progressive ST elevation or deepening of S waves).
+3. Downstream Classifier Explainability: A lightweight classifier trained solely on the disentangled latent factors achieved 0.931 ROC-AUC for myocardial infarction detection while eliminating reliance on uninterpretable deep feature activations.
+
+INTEGRATION WITH MEDINSIGHT AI:
+Demonstrates that biomedical signal processing and explainable AI must be tightly coupled rather than operating in disconnected silos. In MedInsight AI, the Signal Analysis module performs explicit feature extraction (time-domain moments, frequency-domain spectral densities, and waveform envelope parameters) before feeding representations into explainable ML classifiers.

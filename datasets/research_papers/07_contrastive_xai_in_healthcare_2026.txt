@@ -1,0 +1,22 @@
+Title: Contrastive Explainable AI in Healthcare: A Systematic Review of Trends, Benefits, Research Gaps, and Future Directions
+Authors: Pe, M., et al.
+Journal: BMC Medical Informatics and Decision Making
+Year: 2026
+DOI: 10.1186/s12911-026-02845-x (PubMed: 42458456)
+Category: Contrastive XAI, Counterfactual Explanations, Clinical Decision Rationalization
+
+ABSTRACT:
+Standard explainable artificial intelligence (XAI) algorithms address the foundational question: "Why did the model predict event P?" In high-stakes clinical encounters, however, healthcare practitioners invariably formulate contrastive queries: "Why did the model predict diagnosis P rather than alternative differential diagnosis Q?" This systematic review investigates the emerging paradigm of contrastive and counterfactual explainable AI in healthcare, evaluating methodological trends, clinical benefits, and implementation barriers across published literature.
+
+METHODOLOGY & SYSTEMATIC SCOPE:
+Conducting a comprehensive search across PubMed, Scopus, and IEEE Xplore through early 2026, we screened 512 candidate publications. Remarkably, only 18 eligible studies explicitly addressed contrastive XAI methodologies in medical contexts, demonstrating that this paradigm remains a vital, nascent frontier in clinical decision support.
+
+CORE FINDINGS & CONTRASTIVE MECHANISMS:
+1. Contrastive Explanation Types:
+   - Counterfactual Explanations: Identifying the minimal perturbation to a patient's vector (e.g., reducing systolic BP from 158 to 134 mmHg) that would flip the model's output from "High Cardiovascular Risk" to "Moderate Risk".
+   - Difference-based Attributions: Decomposing the model's log-odds ratio between two competing classes (e.g., Ventricular Tachycardia vs. Supraventricular Tachycardia with Aberrancy) to isolate discriminating features.
+2. Clinical Cognitive Alignment: Medical professionals demonstrated a 43% higher comprehension speed when presented with contrastive explanations compared to standard raw attribution bar charts, as differential reasoning naturally mirrors clinical diagnostic workflows.
+3. Plausibility and Actionability Challenges: A primary challenge in counterfactual generation is ensuring physiological feasibility—for instance, an algorithm must not suggest reducing chronological age or altering immutable genetic markers.
+
+FUTURE SCOPE & MEDINSIGHT AI ALIGNMENT:
+Contrastive explanations represent the next major evolution in MedInsight AI. By integrating baseline SHAP feature contributions in the current version and laying the foundation for contrastive differential comparisons across classification targets, MedInsight AI positions itself at the leading edge of healthcare XAI research.

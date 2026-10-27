@@ -1,0 +1,25 @@
+Title: Hierarchical RAG Enhances a Pharmacogenomic AI Assistant in Guideline Related Queries
+Authors: Jeon, Y., et al.
+Journal: Computers in Biology and Medicine
+Year: 2026
+DOI: 10.1016/j.compbiomed.2026.109842 (PubMed: 41319469)
+Category: Retrieval-Augmented Generation (RAG), Natural Language Processing, Biomedical Assistant
+
+ABSTRACT:
+Standard naive retrieval-augmented generation (RAG) models often experience significant context fragmentation when querying dense, multi-tiered biomedical guidelines, frequently returning disjointed text snippets that omit crucial clinical contraindications. In this study, we introduce a Hierarchical Retrieval-Augmented Generation (HRAG) architecture tailored for complex clinical and pharmacogenomic queries. HRAG indexes medical literature across a multi-level hierarchy (document metadata, section summaries, and fine-grained text chunks), drastically reducing hallucination rates and improving citation accuracy.
+
+METHODOLOGY:
+1. Document Parsing & Hierarchical Chunking: Ingesting Clinical Pharmacogenetics Implementation Consortium (CPIC) and FDA guidance documents. Parsing extracts structural trees (Title -> Section Header -> Paragraph -> Sub-bullet).
+2. Two-Stage Retrieval:
+   - Coarse-Grained Routing: Dense embedding similarity identifies the top-level relevant chapters and sections.
+   - Fine-Grained Evidence Selection: BM25 / TF-IDF sparse lexical scoring combined with semantic vector reranking isolates exact sentences containing dosing recommendations and metabolizer phenotypes.
+3. Grounded Synthesis & Citation Tracing: The language model is constrained via strict system prompting to synthesize answers exclusively from retrieved context chunks, annotating every generated assertion with an exact chunk provenance identifier.
+4. Evaluation: Benchmarked using the RAGAS framework (faithfulness, answer relevance, context recall) and evaluated by 10 clinical pharmacologists across 350 challenging clinical test queries.
+
+RESULTS:
+HRAG demonstrated a 94.6% faithfulness score on RAGAS (compared to 71.2% for naive flat RAG) and reduced factual hallucination rates to less than 1.8%. The structured citation tracing enabled clinicians to verify evidence in under 15 seconds per query.
+
+RELEVANCE TO MEDINSIGHT AI BIOMEDICAL RESEARCH ASSISTANT:
+This paper serves as the architectural foundation for MedInsight AI's Biomedical Research Assistant and Document Library:
+- Workflow: PDF/TXT Document Ingestion -> Text Extraction (pdfplumber) -> Hierarchical Chunking -> Keyword/TF-IDF Retrieval -> Evidence-Grounded Synthesis -> Citation & Source Chunk Excerpt Display.
+- Guaranteed Safe Fallback: When no external LLM API key is configured or offline, the system reliably displays retrieved source passages directly with full citation attribution rather than generating hallucinated responses.

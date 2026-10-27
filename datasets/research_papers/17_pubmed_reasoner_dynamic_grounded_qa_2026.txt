@@ -1,0 +1,23 @@
+Title: PubMed Reasoner: Dynamic Reasoning-based Retrieval for Evidence-Grounded Biomedical Question Answering
+Authors: Zhang, Y., Liu, X., and Murai, F.
+Conference: 64th Annual Meeting of the Association for Computational Linguistics (ACL 2026)
+Year: 2026
+ACL Anthology: 2026.acl-long.763
+Category: Dynamic Evidence Retrieval, Biomedical QA, Multi-Step Reasoning, PubMed Grounding
+
+ABSTRACT:
+Static retrieval pipelines in biomedical QA frequently fail when complex medical inquiries require multi-hop evidentiary chains and continuous hypothesis verification. In this work, the authors introduce PubMed Reasoner, an autonomous multi-stage biomedical question-answering agent that dynamically interleaves structured reasoning with active literature search and reflective early stopping.
+
+THREE-STAGE DYNAMIC REASONING PIPELINE:
+1. Self-Critic Query Refinement: The agent iteratively reformulates clinical queries using Medical Subject Headings (MeSH) and domain ontologies, assessing query candidate quality along three rigorous dimensions: coverage of clinical variables, semantic alignment with the diagnostic intent, and minimal redundancy.
+2. Reflective Article Retrieval with Early Stopping: The agent retrieves candidate literature in dynamic batches, critically assessing whether the accumulated evidence satisfies the required confidence threshold. Once sufficient concordance is established across independent studies, the agent initiates early stopping, optimizing computational latency and avoiding context saturation.
+3. Evidence-Grounded Synthesis: Formulates a structured clinical response strictly constrained to the retrieved literature, embedding precise PubMed ID (PMID) citations for every medical recommendation.
+
+PERFORMANCE BENCHMARKS:
+PubMed Reasoner achieved 78.32% accuracy on the PubMedQA benchmark (exceeding human medical expert baselines) and recorded state-of-the-art gains on the MMLU Clinical Knowledge suite. Qualitative blinded physician reviews confirmed superior performance in clinical relevance, reasoning soundness, and evidence trustworthiness.
+
+ROLE IN MEDINSIGHT AI:
+PubMed Reasoner serves as the state-of-the-art benchmark for MedInsight AI's Research Assistant:
+- Dynamic, iterative evidence retrieval over verified biomedical sources.
+- Grounding outputs with verified document identifiers and DOI/PMID tracking.
+- Delivering auditable, reproducible evidence chains tailored for clinical researchers, educators, and students.

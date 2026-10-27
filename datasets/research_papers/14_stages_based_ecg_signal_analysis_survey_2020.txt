@@ -1,0 +1,24 @@
+Title: Stages-Based ECG Signal Analysis From Traditional Signal Processing to Machine Learning Approaches: A Survey
+Authors: Wasimuddin, M., Elleithy, K. M., Abuzneid, A.-S., Faezipour, M., and Abuzaghleh, O.
+Journal: IEEE Access
+Year: 2020
+Volume: 8, Pages: 177782-177803
+IEEE Article ID: 9206538
+DOI: 10.1109/ACCESS.2020.3026968
+Category: Biomedical Signal Processing, ECG Preprocessing, QRS Detection, HRV Feature Engineering
+
+ABSTRACT:
+Electrocardiography (ECG) is the gold standard, non-invasive diagnostic modality for monitoring electrophysiological cardiac activities and identifying lethal arrhythmias. This survey introduces a formalized four-stage framework standardizing the progression from raw voltage time-series to automated machine learning classification.
+
+FOUR-STAGE ANALYTICAL FRAMEWORK:
+1. Stage 1 — Signal Acquisition & Noise Contamination: Explores ambulatory and clinical recording artifacts, specifically low-frequency baseline wander (respiration, patient motion <0.5 Hz), power-line interference (50/60 Hz harmonics), and high-frequency electromyographic (EMG) muscle noise (>45 Hz).
+2. Stage 2 — Digital Filtering & Preprocessing: Compares zero-phase Butterworth bandpass filters (typically 0.5–45 Hz), notch filters for electrical mains suppression, and median-filtering cascades for baseline wander correction without phase distortion.
+3. Stage 3 — Fiducial Point Detection & Feature Extraction: Rigorously details peak detection algorithms—most prominently the Pan-Tompkins derivative-threshold method, wavelet transforms, and morphological feature extractors for QRS complexes, P waves, and T waves. It details time-domain and frequency-domain Heart Rate Variability (HRV) metrics (RR intervals, SDNN, RMSSD, LF/HF spectral ratio).
+4. Stage 4 — Machine Learning & Diagnostic Classification: Evaluates classical classifiers (SVM, Random Forest, k-NN) alongside convolutional architectures for discriminating normal sinus rhythms, ventricular arrhythmias, and bundle branch blocks.
+
+ROLE IN MEDINSIGHT AI:
+Wasimuddin et al.'s stages-based taxonomy serves as the exact algorithmic blueprint for MedInsight AI's software-only Biomedical Signal Processing module:
+- Implements Butterworth zero-phase filtering (`scipy.signal.filtfilt`) and 50 Hz notch suppression.
+- Dual-median baseline wander correction preserving morphological ST-T integrity.
+- Pan-Tompkins R-peak detection calculating instantaneous heart rates.
+- Time- and frequency-domain HRV analysis (SDNN, RMSSD, LF, HF, LF/HF) exported directly as features into the ML workbench.

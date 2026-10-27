@@ -1,0 +1,27 @@
+Title: CLEAR: An Auditable Foundation Model for Radiology Grounded in Clinical Concepts
+Authors: Han, R., et al.
+Journal: Nature Biomedical Engineering
+Year: 2026
+DOI: 10.1038/s41551-026-01741-4
+Category: Concept Bottleneck Models, Auditability, Biomedical Decision Support
+
+ABSTRACT:
+A fundamental deficiency of medical foundation models is their opaque, unconstrained decision logic, which obstructs post-deployment clinical auditing and safety verification. In this article, we present CLEAR (Concept-Learned Explainable Auditable Radiology), an auditable foundation model architecture whose representations are explicitly grounded in a structured ontology of over 200 standardized clinical concepts (e.g., cardiomegaly, pleural effusion, pulmonary consolidation).
+
+CONCEPT BOTTLENECK MECHANISM:
+CLEAR passes high-dimensional multimodal embeddings through an explicit concept bottleneck layer:
+1. Concept Predictor: Predicts the presence and spatial severity of clinically recognized signs with calibrated uncertainty bounds.
+2. Concept-to-Diagnosis Mapping: A transparent, monotonic linear or sparse tree classifier maps the calibrated concept scores into final disease likelihoods.
+3. Interactive Clinician Editing: In cases of diagnostic ambiguity or imaging artifacts, clinicians can interactively intervene and modify a misidentified concept score; the downstream prediction immediately updates in a deterministic, mathematically verifiable manner.
+
+EVALUATION & BENCHMARKING:
+Evaluated on over 450,000 chest radiographs from MIMIC-CXR, CheXpert, and external hospital validation cohorts:
+- Diagnostic Accuracy: Matched or exceeded unconstrained foundation model baselines (mean macro ROC-AUC 0.887 vs 0.885).
+- Auditability: Regulatory and clinical auditors could trace 100% of prediction errors directly to specific misclassified concept primitives rather than untraceable latent weight activations.
+- Clinician Interaction: Concept intervention corrected 74% of false-positive warnings, significantly reducing alarm fatigue in simulated hospital workflows.
+
+PHILOSOPHICAL GROUNDING FOR MEDINSIGHT AI:
+CLEAR underscores the core philosophy of MedInsight AI developed by BioIntelliX:
+- Black-box predictions without clinical attribution are unacceptable for healthcare decision support.
+- Medical AI platforms must provide an auditable chain of custody: Data Profiling -> Preprocessing -> Model Training -> Performance Metrics -> Feature & Concept Explanations -> Downloadable Verified Reports.
+- All conclusions must be clearly identified as model-generated estimates accompanied by robust disclaimers.

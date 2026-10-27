@@ -1,0 +1,22 @@
+Title: Rationale-Guided Retrieval Augmented Generation for Medical Question Answering (RAG^2)
+Authors: Sohn, J., Park, Y., Kang, J., et al. (DMIS Lab)
+Conference: Annual Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics (NAACL 2025)
+Year: 2025
+ACL Anthology: 2025.naacl-long.635
+Category: Medical Question Answering, Rationale-Guided RAG, Context Distractor Filtering
+
+ABSTRACT:
+Standard Retrieval-Augmented Generation (RAG) frameworks in healthcare suffer from three systemic vulnerabilities: poorly formulated clinical queries from end-users, retriever susceptibility to corpus bias, and sensitivity to irrelevant retrieved context ("distractor snippets") that mislead the downstream generator. To resolve these challenges, this paper introduces RAG^2 (Rationale-Guided Retrieval-Augmented Generation for Medical QA).
+
+KEY ARCHITECTURAL INNOVATIONS:
+1. Intermediate Clinical Rationale Generation: Rather than querying databases with unrefined raw user questions, the system first constructs clinical rationales representing the underlying pathophysiological reasoning necessary to resolve the inquiry. These rationales serve as dense query vectors.
+2. Perplexity-Trained Distractor Filtering: A lightweight, dedicated filtering module evaluates retrieved passages against clinical rationales, aggressively purging unhelpful, misleading, or irrelevant snippets before context compilation.
+3. Multi-Corpus Balanced Retrieval: Overcomes single-source bias by executing balanced retrieval across four distinct medical repositories: PubMed research abstracts, PMC open-access full-text literature, Clinical Practice Guidelines (CPGs), and authoritative medical textbooks.
+
+EXPERIMENTAL RESULTS:
+Across multiple challenging clinical QA benchmarks (MedQA, PubMedQA, MedMCQA), RAG^2 demonstrated statistically significant improvements—elevating baseline LLM accuracy by up to 6.1% and outperforming previous state-of-the-art medical RAG pipelines by 5.6%.
+
+ROLE IN MEDINSIGHT AI:
+RAG^2 motivates the multi-tier query refinement and relevance thresholding mechanisms in MedInsight AI's Document Library and Research Assistant:
+- Clinical keyword extraction and query expansion ensure user queries match indexed biomedical terminology.
+- Document chunks with low relevance scores or off-topic keywords are filtered out to prevent context contamination and hallucinations in generated summaries.

@@ -1,0 +1,22 @@
+Title: Systematic reviews of machine learning in healthcare: a literature review
+Authors: Kolasa, K., Admassu, B., Hołownia-Voloskova, M., Kędzior, K. J., Poirrier, J.-E., and Perni, S.
+Journal: Expert Review of Pharmacoeconomics & Outcomes Research (Taylor & Francis)
+Year: 2024
+Volume: 24, Issue: 1, Pages: 69-80
+PMID: 37955147
+DOI: 10.1080/14737167.2023.2279107
+Category: Machine Learning Workbench, Algorithmic Evaluation, Clinical Validation Gaps
+
+ABSTRACT:
+Machine learning (ML) models are increasingly proposed for diagnosis, prognosis, and therapeutic stratification in healthcare. This meta-review examines the scope, modeling approaches, and validation rigor across 220 systematic literature reviews covering a staggering 10,462 ML algorithms published between 2010 and 2023.
+
+KEY FINDINGS & CRITICAL METHODOLOGICAL GAPS:
+1. Algorithmic Distribution: Neural networks represented the most frequent architecture (2,454 algorithms), closely followed by Support Vector Machines (SVMs, 1,578 algorithms) and Random Forests / Decision Trees (1,522 algorithms). Ensemble decision trees and SVMs consistently proved highly competitive on tabular clinical cohorts.
+2. Inadequate Metric Reporting: Comprehensive performance metrics were alarmingly under-reported in the surveyed literature. Standard classification accuracy was reported in only 56% of reviews, specificity in 28%, and sensitivity/recall in 25%. Precision and calibration curves were rarely documented.
+3. Severe Validation Crisis: While internal validation (cross-validation or train/test splits) was documented in 53% of algorithms, external validation on independent cohorts was reported in less than 1% of the 10,462 surveyed algorithms. Furthermore, data leakage during preprocessing was identified as a prevalent confounding factor.
+
+ROLE IN MEDINSIGHT AI:
+This review directly justifies the stringent engineering standards embedded in MedInsight AI's ML Workbench:
+- Implementation of standard benchmark algorithms (SVM, Random Forest, Logistic Regression, XGBoost, LightGBM).
+- Leakage-free 5-fold cross-validation pipelines where imputers and scalers fit strictly on training folds.
+- Comprehensive multi-metric reporting: AUROC, F1-Score, Precision, Recall, Specificity, Brier score calibration, and confusion matrices, directly addressing the reporting deficiencies uncovered in the 10,462-algorithm meta-analysis.

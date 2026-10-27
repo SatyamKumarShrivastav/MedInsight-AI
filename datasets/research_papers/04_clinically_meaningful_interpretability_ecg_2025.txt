@@ -1,0 +1,23 @@
+Title: Clinically Meaningful Interpretability of an AI Model for ECG Classification
+Authors: Gliner, A., et al.
+Journal: npj Digital Medicine
+Year: 2025
+DOI: 10.1038/s41746-025-01467-8
+Category: Electrocardiogram Classification, Clinical Validation, Saliency Mapping
+
+ABSTRACT:
+Standard saliency maps and gradient-based attribution tools applied to electrocardiographic data frequently produce noisy, non-specific heatmaps that clinicians find difficult to correlate with known electrophysiological criteria. This study establishes a rigorous framework for evaluating whether AI explanations for 12-lead ECG classification align with clinically meaningful diagnostic landmarks, such as pathologic Q waves, PR prolongation, and T-wave inversions.
+
+EXPERIMENTAL METHODOLOGY:
+We analyzed a corpus of over 1.2 million annotated ECG recordings. A multi-branch 1D convolutional neural network with temporal attention was trained to classify 14 acute and chronic cardiovascular conditions. To generate explanations, we formulated Segment-Level Regional Attribution (SLRA), which aggregates per-sample gradient contributions across canonical intervals (P wave, PR interval, QRS complex, ST segment, T wave). Explanations were quantitatively benchmarked against annotations provided independently by an international panel of 15 cardiac electrophysiologists.
+
+RESULTS & DISCOVERY:
+1. Alignment with Electrocardiographic Criteria: For left bundle branch block (LBBB) and acute myocardial infarction (AMI), SLRA explanations achieved 91.4% concordance with electrophysiologist-designated diagnostic zones, primarily focusing on QRS duration (>120 ms) and regional ST deviations.
+2. Failure Modes of Generic Attribution: Standard SmoothGrad and Vanilla Backpropagation yielded visual heatmaps that distributed 38% of attribution weight across isoelectric baseline intervals, misleading clinical reviewers.
+3. Diagnostic Assistance Impact: When clinicians utilized SLRA-assisted decision support, junior resident diagnostic accuracy improved from 72.3% to 86.8%, bridging the gap toward specialist performance.
+
+RELEVANCE TO MEDINSIGHT AI:
+This research provides direct scientific justification for MedInsight AI's architectural emphasis:
+- Presenting visual signal overlays alongside tabular metrics.
+- Highlighting specific waveform features (e.g., peak-to-peak amplitudes, zero-crossing rates, spectral band powers) rather than treating raw signals as arbitrary vectors.
+- Displaying model-estimated probabilities with explicit calibration caveats and non-diagnostic disclaimers.

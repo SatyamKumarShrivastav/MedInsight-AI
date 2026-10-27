@@ -1,0 +1,25 @@
+Title: The Cost of Explainability in AI-Enhanced Electrocardiogram Models
+Authors: Patlatzoglou, K., et al.
+Journal: npj Digital Medicine
+Year: 2025
+DOI: 10.1038/s41746-025-02122-y
+Category: Biomedical Signal Processing, ECG Interpretation, Explainable Deep Learning
+
+ABSTRACT:
+Automated analysis of 12-lead electrocardiograms (ECGs) via deep neural networks has achieved cardiologist-level diagnostic sensitivity for arrhythmias, conduction abnormalities, and structural heart disease. However, incorporating interpretability mechanisms frequently introduces trade-offs with predictive accuracy or computational overhead. In this investigation, we systematically quantify the "cost of explainability" across diverse architectural paradigms, evaluating how constrained representation learning and post-hoc attribution methods impact diagnostic fidelity on benchmark electrocardiographic databases.
+
+METHODOLOGICAL FRAMEWORK:
+We introduced VAE-SCAN (Variational Autoencoder with Structurally Constrained Attentive Networks), an interpretable representation-learning architecture that decouples physiological waveform components into disentangled latent factors corresponding to P waves, QRS complexes, and ST-T segments.
+We benchmarked VAE-SCAN against standard unconstrained convolutional neural networks (ResNet-1D) and gradient-based attribution schemes (Integrated Gradients, Guided Grad-CAM) across the PTB-XL database (21,837 clinical ECGs) and the MIT-BIH Arrhythmia benchmark.
+
+KEY FINDINGS:
+1. Performance vs. Interpretability Trade-Off: Unconstrained black-box ResNet-1D architectures achieved an macro-averaged ROC-AUC of 0.928 across 5 diagnostic superclasses. Constrained VAE-SCAN models achieved 0.916 ROC-AUC (a marginal 1.2% drop) while providing fully disentangled, physiologically verifiable concept explanations.
+2. Signal-Processing Prerequisites: Digital filtering (0.5-40 Hz bandpass) and baseline wander removal proved essential to prevent attribution methods from latching onto high-frequency muscle artifacts or respiratory drift as pseudo-pathological predictors.
+3. Clinician Evaluation: In clinical blinding trials, 84% of cardiologists preferred models offering regional waveform importance maps (highlighting ST-segment elevation or QRS widening) over raw numerical probability outputs alone.
+
+APPLICATION IN MEDINSIGHT AI:
+MedInsight AI leverages these insights in its Biomedical Signal Analysis module:
+- Software-only processing of ECG CSV waveforms without requiring dedicated physical acquisition hardware.
+- Multi-stage digital filtering: notch filtering (50/60 Hz), bandpass filtering, and baseline correction.
+- Peak detection (Pan-Tompkins algorithm) and waveform segmentation (P-QRS-T complexes).
+- Combined feature extraction (time-domain HRV and frequency-domain Welch PSD) with explainable machine learning predictions.
